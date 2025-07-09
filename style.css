@@ -1,0 +1,41 @@
+body {
+  background: #0e0e0e;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.container {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 0 10px #00ff88;
+}
+input, button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+button {
+  background: #00ff88;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.progress-bar {
+  width: 100%;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  margin: 5px 0;
+}
+.progress-fill {
+  height: 100%;
+  background: #00ff88;
+}

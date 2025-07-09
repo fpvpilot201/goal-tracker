@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goal Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="manifest" href="manifest.json"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Goal Tracker</h1>
+    <form id="goalForm">
+      <input type="text" id="goalName" placeholder="Goal Name" required />
+      <input type="number" id="goal" placeholder="Goal Amount ($)" required />
+      <input type="number" id="current" placeholder="Current Amount ($)" required />
+      <button type="submit">Add / Update</button>
+    </form>
+    <div id="goals"></div>
+    <canvas id="goalChart" width="300" height="150"></canvas>
+    <button onclick="exportToCSV()">Export to CSV</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
